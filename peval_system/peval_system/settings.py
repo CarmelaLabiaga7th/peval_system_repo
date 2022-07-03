@@ -28,8 +28,10 @@ SECRET_KEY = 'django-insecure-(-b91w-7ljgji2g$=@7@%r&vqg-kqyq&5l^-8t9$2ns81j_zx4
 DEBUG = True
 
 #ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1'
+    'peval-deployed.herokuapp.com'
+    ]
+#ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 AUTH_USER_MODEL = "users.User" 
 
