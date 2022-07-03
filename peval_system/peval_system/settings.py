@@ -104,10 +104,16 @@ DATABASES = {
     'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME':'d1gamc6rtghm5j',
+        'HOST':'ec2-44-198-82-71.compute-1.amazonaws.com',
+        'PORT':5432,        
+        'USER': 'ffkksfgireeopz',
+        'PASSWORD':'9a35e78fc94cdd4fa39d2ecf63cfbffa23ab3fa730631e2d73a5996c97f9f60f',
+        
     }
 }
-
+#postgres://ffkksfgireeopz:9a35e78fc94cdd4fa39d2ecf63cfbffa23ab3fa730631e2d73a5996c97f9f60f@ec2-44-198-82-71.compute-1.amazonaws.com:5432/d1gamc6rtghm5j
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
